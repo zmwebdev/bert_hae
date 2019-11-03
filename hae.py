@@ -115,7 +115,8 @@ if FLAGS.do_train:
                                                   example_features_nums, FLAGS.train_batch_size, 
                                                   FLAGS.num_train_epochs, shuffle=False)
     
-    num_train_steps = FLAGS.train_steps
+    #num_train_steps = FLAGS.train_steps
+    num_train_steps = int(len(train_examples) / FLAGS.train_batch_size * FLAGS.num_train_epochs)    
     num_warmup_steps = int(num_train_steps * FLAGS.warmup_proportion)
 
 if FLAGS.do_predict:
@@ -271,7 +272,12 @@ with tf.Session() as sess:
             train_summary_writer.add_summary(train_summary, step)
             train_summary_writer.flush()
             print('training step: {}, total_loss: {}'.format(step, total_loss_res))
-            
+
+            if step == num_train_steps:
+                # save at the end
+                save_path = saver.save(sess, '{}/model_{}.ckpt'.format(FLAGS.output_dir, step))
+                print('Model saved in path', save_path)
+
             if step >= FLAGS.evaluate_after and step % FLAGS.evaluation_steps == 0 and step != 0:
                 val_total_loss = []
                 all_results = []
@@ -363,18 +369,17 @@ with tf.Session() as sess:
                 save_path = saver.save(sess, '{}/model_{}.ckpt'.format(FLAGS.output_dir, step))
                 print('Model saved in path', save_path)
 
-                
 
 
 # In[5]:
 
 
-best_f1 = max(f1_list)
-best_f1_idx = f1_list.index(best_f1)
-best_heq = heq_list[best_f1_idx]
-best_dheq = dheq_list[best_f1_idx]
-with open(FLAGS.output_dir + 'result.txt', 'w') as fout:
-    fout.write('{},{},{},{},{}\n'.format(best_f1, best_heq, best_dheq, FLAGS.history, FLAGS.output_dir))
+#best_f1 = max(f1_list)
+#best_f1_idx = f1_list.index(best_f1)
+#best_heq = heq_list[best_f1_idx]
+#best_dheq = dheq_list[best_f1_idx]
+#with open(FLAGS.output_dir + 'result.txt', 'w') as fout:
+#    fout.write('{},{},{},{},{}\n'.format(best_f1, best_heq, best_dheq, FLAGS.history, FLAGS.output_dir))
 
 
 # In[ ]:
