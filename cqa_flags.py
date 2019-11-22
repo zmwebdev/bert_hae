@@ -164,3 +164,10 @@ flags.DEFINE_integer(
     "train_steps", 20,
     "how many train steps")
 
+flags.DEFINE_integer(
+    "max_to_keep", 5,
+    "how many chekcpoints keep saved")
+
+flags.DEFINE_bool(
+    "save_at_the_end", False,
+    "save the model at the end")
