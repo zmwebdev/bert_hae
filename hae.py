@@ -232,7 +232,8 @@ merged_summary_op = tf.summary.merge_all()
 
 RawResult = collections.namedtuple("RawResult", ["unique_id", "start_logits", "end_logits"])
 
-saver = tf.train.Saver()
+#https://www.tensorflow.org/api_docs/python/tf/compat/v1/train/Saver
+saver = tf.train.Saver(max_to_keep=FLAGS.max_to_keep)  
 # Initializing the variables
 init = tf.global_variables_initializer()
 tf.get_default_graph().finalize()
@@ -273,7 +274,7 @@ with tf.Session() as sess:
             train_summary_writer.flush()
             print('training step: {}, total_loss: {}'.format(step, total_loss_res))
 
-            if step == num_train_steps:
+            if step == num_train_steps and FLAGS.save_at_the_end:
                 # save at the end
                 save_path = saver.save(sess, '{}/bert_hae_model.ckpt'.format(FLAGS.output_dir, step))
                 print('Model saved in path', save_path)
