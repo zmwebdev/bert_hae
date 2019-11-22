@@ -422,6 +422,7 @@ with tf.Session() as sess:
             except:
                 print('batch dropped because too large!')
 
+        step = 0
         output_prediction_file = os.path.join(FLAGS.output_dir, "predictions_{}.json".format(step))
         output_nbest_file = os.path.join(FLAGS.output_dir, "nbest_predictions_{}.json".format(step))
 
