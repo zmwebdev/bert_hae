@@ -1,0 +1,169 @@
+Original: {
+            "title": "Alejandro Sanz",
+            "section_title": "Biografia.",
+            "background": "Alejandro Sanz, benetako izenez Alejandro Sánchez Pizarro (Madril, Espainia, 1968ko abenduaren 18a - ) musikari, musikagile eta abeslari espainiarra da.",
+            "paragraphs": [
+                {
+                    "qas": [
+                        {
+                            "followup": "m",
+                            "yesno": "x",
+                            "question": "Ze urtean atera zuen bere aurreneko diskoa?",
+                            "answers": [
+                                {
+                                    "text": "1991an",
+                                    "answer_start": 371
+                                }
+                            ],
+                            "id": "C_989793498b964d049a4c799b00ecc533_q#0",
+                            "orig_answer": {
+                                "text": "1991an",
+                                "answer_start": 371
+                            }
+                        }],
+                    "context": "María Pizarro eta Jesús Sánchezen seme txikiena da. Madrilgo Moratalaz auzokoa da. Bere aitak eragin handia izan zuen musikan Alejandrorentzako. Gaztetan, hainbat taldetan parte hartu zuen, baina bere ibilbide musikala ez zen hasi 1980ko hamarkadaren bukaera arte, \"Los chulos son pa´ cuidarlos\" diskoarekin eta \"Alejandro Magno\" izenarekin, baina ez zuen zorterik izan. 1991an, Warner diskoetxearekin sinatu eta \"Viviendo deprisa\" diskoa atera zuen hamar abestirekin. Horien artean \"Los dos cogidos de la mano\", \"Pisando fuerte\" eta \"Se le apagó la luz\" abestiak. 1993an bere bigarren diskoa, \"Si tu me miras\", Londresen grabatu zuen. Miguel Ángel Arenas ekoizleak parte hartu zuen lehen diskoan bezalaxe. Diskoak arrakasta handia izan zuenez, 1994an akustiko berezi bat egin zuen, \"Viviendo deprisa\" eta \"Si tu me miras\" diskotik bost abesti bana hartuz. 1995ean, \"La fuerza del corazón\" singlearekin beste herrialdeetan ezaguna egin zen eta \"Alejandro Sanz 3\" diskoak 1.800.000 ale saldu zituen. 1997an Mas diskoarekin, \"Corazón partío\" abestiarekin 70 aste egon zen abesti hoberena bezala, munduan 7.300.000 disko salduz. 1998an Malú abeslariari babesa eman zion eta \"Aprendiz\" abestia idatzi zion. Malúk 400.000 kopia saldu zituen. 2001an, The Corrs taldearekin lan egin zuen \"Me iré\" abestia ingelesez grabatzeko (\"The hardest\") eta The Corrs abestiaren One Night gazteleraz grabatzeko (\"Una noche\"). 2003an \"No es lo mismo\" atera zuen kalera. 2005ean Shakirarekin lan egin zuen eta arrakasta handia izan zuen. Horregatik, MTV Music Awardsen galaren hasieran abestu zuen. CANNOTANSWER",
+                    "id": "C_989793498b964d049a4c799b00ecc533"
+                }
+            ]
+        }
+
+
+Prediction : {"best_span_str": ["1991an, Warner diskoetxearekin sinatu eta \"Viviendo deprisa\" diskoa atera zuen hamar abestirekin", "Viviendo deprisa\" diskoa atera zuen hamar abestirekin", "CANNOTANSWER", "CANNOTANSWER"], "qid": ["C_989793498b964d049a4c799b00ecc533_q#0", "C_989793498b964d049a4c799b00ecc533_q#1", "C_989793498b964d049a4c799b00ecc533_q#2", "C_989793498b964d049a4c799b00ecc533_q#3"], "followup": ["x", "x", "x", "x"], "yesno": ["y", "y", "y", "y"]}
+
+F1 kalkulua:
+
+  precision = 1.0 * num_same / len(prediction_tokens)
+  recall = 1.0 * num_same / len(ground_truth_tokens)
+  f1 = (2 * precision * recall) / (precision + recall)
+
+  prediction_tokens: ['1991an', 'warner', 'diskoetxearekin', 'sinatu', 'eta', 'viviendo', 'deprisa', 'diskoa', 'atera', 'zuen', 'hamar', 'abestirekin']
+  ground_truth_tokens: ['1991an']
+  common: Counter({'1991an': 1})
+  num_same: 1
+  precision: 0.08333
+  recall: 1.0
+  f1: 0.1538
+
+
+---------------------------------------------------------------------------
+{
+    "title": "Luka Modrić",
+    "section_title": "Real Madril.",
+    "background": "Luka Modrić (Zadar, Dalmazia 1985eko irailaren 9a - ) kroaziar futbolaria da, erdilaria, eta, egun, Real Madrilen jokatzen du. Horrez gain, Kroaziako selekzioan ere nazioarteko jokalari finkoa izan ohi da.",
+    "paragraphs": [
+        {
+            "qas": [
+                {
+                    "followup": "m",
+                    "yesno": "x",
+                    "question": "Zein postutan jokatzen du?",
+                    "answers": [
+                        {
+                            "text": "CANNOTANSWER",
+                            "answer_start": 1811
+                        }
+                    ],
+                    "id": "C_863fed39e5834f5fa89cd5f121e2bd06_q#0",
+                    "orig_answer": {
+                        "text": "CANNOTANSWER",
+                        "answer_start": 1811
+                    }
+                },
+                {
+                    "followup": "m",
+                    "yesno": "x",
+                    "question": "Zein urtetan hasi zen Real Madrilen jokatzen?",
+                    "answers": [
+                        {
+                            "text": "2012ko abuztuaren 27an",
+                            "answer_start": 37
+                        }
+                    ],
+                    "id": "C_863fed39e5834f5fa89cd5f121e2bd06_q#1",
+                    "orig_answer": {
+                        "text": "2012ko abuztuaren 27an",
+                        "answer_start": 37
+                    }
+                }
+            ],
+            "context": "Asteetan negoziatzen ibili eta gero, 2012ko abuztuaren 27an, Real Madrilek webean iragarri zuen Modrićen fitxaketa. 30 milioi eurotan baloratu zen aldaketa eta jokalariaren errendimenduaren baitako pizgarriekin puztu zitekeen zenbaki hori. Kroaziarrak 5 denboraldietarako sinatu zuen kontratua klubarekin eta, 2 egun geroago, debuta egin zuen Espainiako Superkopan Bartzelona Futbol Klubaren aurka. Modrić 83. minutuan atera zen Santiago Bernabéu estadioko zelaira, Özilen ordez, eta 2-1 garaipenaz, titulua eskuratzeko aukera izan zuten. Irailaren 2an, Ligako hirugarren partidan, Modrić titularra izan zen lehenengo aldiz, Granadaren aurka eta oso kritika onak jaso zituen. Lehenengo tantoa, berriz, azaroaren 3an markatu zuen eta Real Zaragozaren aurka izan zen. 4-0 amaitu zuten. 2013ko martxoaren 5ean, Modrićen dizdira nabarmendu zen bereziki. UEFAko Txapeldunen Ligan, Manchester United Football Clubaren aurka, 59. minutuan sartu zen jokura eta partida aldrebestu zien erabat haiei. 1-2 irabazi zuten eta txapelketaren final-laurdenetarako klasifikatu ziren horrela. Espainian egin zuen lehen denboraldi honetan, Modrić ohikoa izan zen 11ko titularrean eta 53 partida jokatu zituen, 4 tanto markatuz. 2013ko abenduaren 10ean, denboraldiko lehen tantoa markatu zuen FC Københavnen aurka eta ekipoan bere merezitako lekua zuela erakutsi zuen. 2014a ere urte ona izan zen Modrićentzat eta Carlo Ancelottik ere goraipatu zuen, beste askok bezalaxe: 2014ko maiatzaren 24an, UEFAko Txapeldunen Liga irabazi zuten, Atletico Madrili 4-1 irabazi ziotelarik. Berriro izan zen erabakiorra Modrić, partidaren 93. minutuan, Sergio Ramosi kornerra jaurti zionean eta honek prorrogarako bidea ireki ahal izan zuenean. 2014ko abuztuaren 12an, UEFAren Europako Superkopa irabazi zuten, Sevillari 2-0 irabazi ziotelarik. CANNOTANSWER",
+            "id": "C_863fed39e5834f5fa89cd5f121e2bd06"
+        }
+    ]
+}
+
+
+{"best_span_str": ["CANNOTANSWER", "2012ko abuztuaren 27an"], "qid": ["C_863fed39e5834f5fa89cd5f121e2bd06_q#0", "C_863fed39e5834f5fa89cd5f121e2bd06_q#1"], "followup": ["x", "x"], "yesno": ["y", "y"]}
+
+  prediction_tokens: ['2012ko', 'abuztuaren', '27an']
+  ground_truth_tokens: ['2012ko', 'abuztuaren', '27an']
+  common: Counter({'2012ko': 1, 'abuztuaren': 1, '27an': 1})
+  num_same: 3
+  precision: 1.0
+  recall: 1.0
+  f1: 1.0
+
+
+------------------------------------------------------------------------------
+
+{
+    "title": "Mel Gibson",
+    "section_title": "Familia.",
+    "background": "Mel Colm-Cille Gerard Gibson (Peekshill, New York, 1956ko urtarrilaren 3a -) Ameriketako Estatu Batuetan jaio eta gaztaroan Australian hezitako zinema aktore, zuzendari eta ekoizlea da, Oscar Sariaren irabazlea. \"Mad Max\" eta \"Lethal Weapon\" film multzoek mundu osoan zehar ospea eman diote.",
+    "paragraphs": [
+        {
+            "qas": [
+                {
+                    "followup": "m",
+                    "yesno": "x",
+                    "question": "Zenbat anai-arreba ditu?",
+                    "answers": [
+                        {
+                            "text": "CANNOTANSWER",
+                            "answer_start": 2123
+                        }
+                    ],
+                    "id": "C_620a3ab2c01a4b5ba97d9ff2274b9165_q#0",
+                    "orig_answer": {
+                        "text": "CANNOTANSWER",
+                        "answer_start": 2123
+                    }
+                },
+                {
+                    "followup": "m",
+                    "yesno": "x",
+                    "question": "Zenbat seme-alaba ditu?",
+                    "answers": [
+                        {
+                            "text": "Bikoteak zazpi seme-alaba ditu, alaba bat eta sei seme: Hannah (1980), Edward eta Christian bikiak (1982), Willie (1985), Louis (1988), Milo (1990) eta Tommy (1999",
+                            "answer_start": 144
+                        },
+                        {
+                            "text": "Bikoteak zazpi seme-alaba ditu, alaba bat eta sei seme",
+                            "answer_start": 144
+                        }
+
+                    ],
+                    "id": "C_620a3ab2c01a4b5ba97d9ff2274b9165_q#1",
+                    "orig_answer": {
+                        "text": "Bikoteak zazpi seme-alaba ditu, alaba bat eta sei seme: Hannah (1980), Edward eta Christian bikiak (1982), Willie (1985), Louis (1988), Milo (1990) eta Tommy (1999",
+                        "answer_start": 144
+                    }
+                }
+            ],
+            "context": "1980ko ekainaren 7an Mel Gibson, Robyn Mooreekin ezkondu zen, erizaina lanbidez. Biak bikotekidea bilatzeko zerbitzu baten bidez ezagutu ziren. Bikoteak zazpi seme-alaba ditu, alaba bat eta sei seme: Hannah (1980), Edward eta Christian bikiak (1982), Willie (1985), Louis (1988), Milo (1990) eta Tommy (1999). Nahiz eta Gibson Erromatar Katoliko erabateko sinisduna izan eta Robyn berriz anglikarra, Gibsonek ez ditu emaztearen sineskerak baztertzen, bere esanetan \"benetako maitasunak ez du mugarik ezagutzen\". Gibsonek bere emaztea \"Gibraltarreko Arroka da, ederragoa halere\". Baina Melek \"Extra Ecclesiam Nulla Salus\" dotrina katolikoan ere sinisten du. Bere emazteari dotrina honek nola eragingo zion galdetu ziotenean, zera esan zuen: \"Elizatik kanpo daudenentzat ez dago salbamendurik\", (eta) nik hori sinisten dut. Nere emaztea saindu bat da. Bera ni baino pertsona hobea da. Zintzoki esanda... berak errezatu egiten du, berak Jaungoikoan sinisten du, berak Jesus ezagutzen du, berak guzti horretan sinisten du. Eta berak lor ez dezan ez litzateke justua izango; bera ni baino hobea da. Baina eserleku batetik eginiko aipamen bat da, eta ni esandakoarekin bat noa\". Hannah Gibson, Melen alaba bakar eta zaharrenak, Kenny Wayne Shepherd musikariarekin ezkondu zen 2006ko irailaren 16an. Aurretik moja edo lekaime kontsakratu bilakatzea ere izatekotan egon zen, baina azkenik bere benetako bokazioa emaztea eta ama zela konturatu zen. Hiru urteko banantzearen ondoren, 2009ko apirilaren 13an Robyn Gibsonek dibortzioa sinatu zuen, arrazoi bezala konpondu ezinezko ezberdintasunak aipatu zituelarik. Era berean, Gibson Bikoteak zera esan zuen: \"Gure ezkontza bizian eta banakuntza unean zehar beti mantendu izan dugu geure familiaren pribatutasun eta osotasuna, eta etorkizunean ere honela jarduten jarraituko dugu.\" 2009ko maiatzean Mel Gibsonen bozeramailearen esanetan Gibson eta bere neskalagunak, jaiotzez errusiarra den Oksana Grigorieva musikaria, beren lehen haurraren jaiotza 2009ko udazkenerako itxaroten ari ziren. Grigorievak jada badu beste seme bat aurreko bere mutil-lagunarekin, Timothy Dalton aktorea. CANNOTANSWER",
+            "id": "C_620a3ab2c01a4b5ba97d9ff2274b9165"
+        }
+    ]
+}
+
+{"best_span_str": ["CANNOTANSWER", "Bikoteak zazpi seme-alaba ditu, alaba bat eta sei seme"], "qid": ["C_620a3ab2c01a4b5ba97d9ff2274b9165_q#0", "C_620a3ab2c01a4b5ba97d9ff2274b9165_q#1"], "followup": ["x", "x"], "yesno": ["y", "y"]}
+
+
+prediction_tokens: ['bikoteak', 'zazpi', 'semealaba', 'ditu', 'alaba', 'bat', 'eta', 'sei', 'seme']
+ground_truth_tokens: ['bikoteak', 'zazpi', 'semealaba', 'ditu', 'alaba', 'bat', 'eta', 'sei', 'seme', 'hannah', '1980', 'edward', 'eta', 'christian', ...]
+common: Counter({'bikoteak': 1, 'zazpi': 1, 'semealaba': 1, 'ditu': 1, 'alaba': 1, 'bat': 1, 'eta': 1, 'sei': 1, 'seme': 1})
+num_same: 9
+precision: 1.0
+recall: 0.36
+f1: 0.5294

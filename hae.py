@@ -465,8 +465,8 @@ with tf.Session() as sess:
         val_summary_writer.add_summary(val_summary, step)
         val_summary_writer.flush()
         
-        save_path = saver.save(sess, '{}/model_{}.ckpt'.format(FLAGS.output_dir, step))
-        print('Model saved in path', save_path)
+        #save_path = saver.save(sess, '{}/model_{}.ckpt'.format(FLAGS.output_dir, step))
+        #print('Model saved in path', save_path)
 
 
 
